@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrowthSystems — Growth Systems Engineered</title>
+    <meta
+      name="description"
+      content="Scalable, low-latency infrastructure for modern adtech stacks. Turn raw data into distribution power with zero-leakage attribution."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Top Nav -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="brand" href="#">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">GrowthSystems</span>
+        </a>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav__links" id="navLinks">
+          <a href="#services">Services</a>
+          <a href="#lifecycle">Architecture</a>
+          <a href="#systems">Systems</a>
+          <a href="#docs">Documentation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <div class="pill">
+              <span class="pill__dot"></span>
+              <span>SYSTEM v4.0 ACTIVE</span>
+            </div>
+
+            <h1 class="hero__title">
+              Growth Systems<br />
+              <span class="accent">Engineered</span>
+            </h1>
+
+            <p class="hero__subtitle">
+              Scalable, low-latency infrastructure for modern adtech stacks. Turn raw data into
+              distribution power with zero-leakage attribution.
+            </p>
+
+            <a class="btn" href="#services">
+              Explore Infrastructure <span class="btn__arrow">→</span>
+            </a>
+          </div>
+
+          <div class="hero__viz">
+            <div class="panel panel--viz">
+              <div class="panel__label">NEXT_MATRIX_PROCESSOR_v4</div>
+
+              <div class="radar" aria-hidden="true">
+                <svg viewBox="0 0 520 340" class="radar__svg">
+                  <!-- outer rounded card effect background handled by CSS -->
+                  <!-- Grid -->
+                  <g class="radar__grid">
+                    <circle cx="260" cy="170" r="130"></circle>
+                    <circle cx="260" cy="170" r="95"></circle>
+                    <circle cx="260" cy="170" r="60"></circle>
+
+                    <line x1="260" y1="40" x2="260" y2="300"></line>
+                    <line x1="130" y1="170" x2="390" y2="170"></line>
+
+                    <line x1="175" y1="85" x2="345" y2="255"></line>
+                    <line x1="345" y1="85" x2="175" y2="255"></line>
+                  </g>
+
+                  <!-- Points -->
+                  <g class="radar__points">
+                    <circle cx="260" cy="55" r="6"></circle>
+                    <circle cx="380" cy="170" r="6"></circle>
+                    <circle cx="260" cy="285" r="6"></circle>
+                    <circle cx="140" cy="170" r="6"></circle>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="viz__footer">
+                <div class="mini-card">
+                  <div class="mini-card__kicker">LATENCY</div>
+                  <div class="mini-card__value">14.2ms</div>
+                </div>
+
+                <div class="viz__status">STATUS: OPERATIONAL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section" id="services">
+        <div class="container">
+          <h2 class="section__title">Core Infrastructure Services</h2>
+          <p class="section__subtitle">
+            High-performance modules designed for the next generation of automated marketing operations.
+          </p>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">
+                <div class="icon-bars">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <h3 class="card__title">Algorithmic Distribution</h3>
+              <p class="card__text">
+                Dynamic bid optimization and channel scaling across programmatic environments with millisecond precision.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">
+                <div class="icon-grid">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <h3 class="card__title">Data Orchestration</h3>
+              <p class="card__text">
+                Unified pipelines for cross-platform event ingestion, normalization, and real-time synchronization.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">
+                <div class="icon-slider">
+                  <span class="icon-slider__track"></span>
+                  <span class="icon-slider__knob"></span>
+                </div>
+              </div>
+              <h3 class="card__title">Performance Attribution</h3>
+              <p class="card__text">
+                Deterministic modeling with zero-leakage tracking to identify the exact source of growth.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Architecture Lifecycle -->
+      <section class="section section--muted" id="lifecycle">
+        <div class="container">
+          <h2 class="section__title section__title--center">Architecture Lifecycle</h2>
+          <p class="section__subtitle section__subtitle--center">
+            Standardizing growth through engineering excellence.
+          </p>
+
+          <div class="timeline">
+            <div class="timeline__line" aria-hidden="true"></div>
+
+            <div class="step">
+              <div class="step__badge">STEP 01</div>
+              <div class="step__dot">
+                <span class="step__icon">⤴</span>
+              </div>
+              <h3 class="step__title">Connect</h3>
+              <p class="step__text">
+                REST and gRPC API integration for seamless event ingestion from any provider.
+              </p>
+            </div>
+
+            <div class="step">
+              <div class="step__badge">STEP 02</div>
+              <div class="step__dot">
+                <span class="step__icon">▢</span>
+              </div>
+              <h3 class="step__title">Process</h3>
+              <p class="step__text">
+                Advanced logic layer with edge compute processing for real-time bid filtering.
+              </p>
+            </div>
+
+            <div class="step">
+              <div class="step__badge">STEP 03</div>
+              <div class="step__dot">
+                <span class="step__icon">↗</span>
+              </div>
+              <h3 class="step__title">Scale</h3>
+              <p class="step__text">
+                Global multi-region deployment ensuring 99.99% uptime for your scaling needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Systems -->
+      <section class="section" id="systems">
+        <div class="container">
+          <h2 class="section__title">System Health Overview</h2>
+          <p class="section__subtitle">
+            Our global network handles billions of requests with sub-15ms latency, providing the backbone for
+            performance-first marketing operations worldwide.
+          </p>
+
+          <div class="health">
+            <div class="health__left">
+              <div class="health-card">
+                <div class="health-card__row">
+                  <span class="health-card__icon" aria-hidden="true">✓</span>
+                  <div>
+                    <div class="health-card__kicker">GLOBAL UPTIME</div>
+                    <div class="health-card__value">99.99% Operational</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="health-card">
+                <div class="health-card__row">
+                  <span class="health-card__icon health-card__icon--blue" aria-hidden="true">◎</span>
+                  <div>
+                    <div class="health-card__kicker">SYSTEM THROUGHPUT</div>
+                    <div class="health-card__value">85k Req / Second</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="health__right">
+              <div class="panel panel--stats">
+                <div class="stats">
+                  <div class="stats__top">
+                    <div class="stats__label">Signals Processed</div>
+                    <div class="stats__big">1.2B</div>
+                    <div class="stats__delta">+12% Growth</div>
+                  </div>
+
+                  <div class="stats__grid">
+                    <div class="stats__mini">
+                      <div class="stats__mini-label">Accuracy</div>
+                      <div class="stats__mini-value">99.9%</div>
+                      <div class="stats__mini-sub">Verified Tracking</div>
+                    </div>
+                    <div class="stats__mini">
+                      <div class="stats__mini-label">Latency</div>
+                      <div class="stats__mini-value">&lt; 15ms</div>
+                      <div class="stats__mini-sub">Edge Deployment</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Docs / FAQ -->
+      <section class="section section--muted" id="docs">
+        <div class="container">
+          <h2 class="section__title section__title--center">Technical Documentation</h2>
+          <p class="section__subtitle section__subtitle--center">Architecture details for technical stakeholders.</p>
+
+          <div class="faq" id="faq">
+            <div class="faq__item">
+              <button class="faq__q" type="button" aria-expanded="false">
+                <span>How do you handle cookie-less attribution?</span>
+                <span class="faq__chev" aria-hidden="true">⌄</span>
+              </button>
+              <div class="faq__a" aria-hidden="true">
+                We utilize deterministic server-side modeling and first-party signal processing to maintain high-fidelity
+                tracking in a privacy-first environment.
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__q" type="button" aria-expanded="false">
+                <span>What is the peak throughput of the Data Orchestration layer?</span>
+                <span class="faq__chev" aria-hidden="true">⌄</span>
+              </button>
+              <div class="faq__a" aria-hidden="true">
+                The system is horizontally scalable, currently optimized for sustained loads of 85,000 requests per second
+                with burst capacity up to 150,000 RPS.
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__q" type="button" aria-expanded="false">
+                <span>Can we deploy our own custom processing logic?</span>
+                <span class="faq__chev" aria-hidden="true">⌄</span>
+              </button>
+              <div class="faq__a" aria-hidden="true">
+                Yes. The architecture supports gRPC middleware for injecting custom filtering and bid logic at the edge
+                layer.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div class="container">
+          <div class="cta__card">
+            <div class="cta__content">
+              <h2 class="cta__title">Partner with GrowthSystems</h2>
+              <p class="cta__text">
+                Our engineering team works closely with technical leads to architect high-performance adtech stacks.
+              </p>
+              <div class="cta__label">CONTACT ENGINEERING</div>
+              <a class="cta__email" href="mailto:solutions@growthsystems.tech">solutions@growthsystems.tech</a>
+            </div>
+
+            <div class="cta__glyph" aria-hidden="true">
+              <div class="glyph">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__left">
+              <span class="footer__mark" aria-hidden="true"></span>
+              <span>GrowthSystems © <span id="year"></span></span>
+            </div>
+            <div class="footer__right">ADTECH GROWTH INFRASTRUCTURE</div>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
