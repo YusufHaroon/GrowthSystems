@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap');
+
 :root{
   --bg: #ffffff;
   --text: #0b1220;
@@ -12,19 +14,31 @@
   --radius: 16px;
   --radius-lg: 22px;
   --container: 1120px;
-  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  --font-heading: 'Space Grotesk', ui-sans-serif, system-ui;
 }
 
 *{ box-sizing: border-box; }
 html,body{ height: 100%; }
 body{
   margin:0;
-  font-family: var(--font);
+  font-family: var(--font-body);
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 64px;
 }
+
+h1, h2, h3, h4, h5, h6,
+.hero__title,
+.section__title,
+.card__title,
+.step__title,
+.cta__title {
+  font-family: var(--font-heading);
+}
+
 
 a{ color: inherit; text-decoration: none; }
 .container{
@@ -35,12 +49,14 @@ a{ color: inherit; text-decoration: none; }
 
 /* Nav */
 .nav{
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   background: rgba(255,255,255,0.82);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(232,237,245,0.75);
-  z-index: 50;
+  z-index: 1000;
 }
 .nav__inner{
   display:flex;
@@ -355,64 +371,93 @@ a{ color: inherit; text-decoration: none; }
 
 /* Timeline */
 .timeline{
-  position: relative;
+  position:relative;
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  padding-top: 26px;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  padding-top:40px;
+  overflow:hidden;
 }
-.timeline__line{
-  position:absolute;
-  left: 0;
-  right: 0;
-  top: 66px;
-  height: 1px;
-  background: rgba(232,237,245,0.95);
-}
+
 .step{
   text-align:center;
-  padding: 0 10px;
+  position:relative;
 }
+
 .step__badge{
   display:inline-block;
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  color: #1d5cff;
-  font-weight: 800;
-  background: rgba(29,92,255,0.08);
-  border: 1px solid rgba(29,92,255,0.18);
-  padding: 6px 10px;
-  border-radius: 999px;
-  margin-bottom: 10px;
+  font-size:10px;
+  letter-spacing:.12em;
+  font-weight:800;
+  color:var(--accent);
+  background:rgba(29,92,255,.08);
+  border:1px solid rgba(29,92,255,.18);
+  padding:6px 10px;
+  border-radius:999px;
+  margin-bottom:10px;
 }
+
 .step__dot{
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 12px;
-  border-radius: 999px;
-  background: #fff;
-  border: 1px solid rgba(232,237,245,0.95);
+  position:relative;
+  z-index:2;
+  width:56px;
+  height:56px;
+  margin:0 auto 12px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--line);
   display:flex;
   align-items:center;
   justify-content:center;
-  box-shadow: 0 10px 30px rgba(10,25,60,0.05);
+  box-shadow:0 10px 30px rgba(10,25,60,.05);
 }
+
 .step__icon{
-  color: var(--accent);
-  font-weight: 900;
-  font-size: 18px;
+  color:var(--accent);
+  font-size:18px;
+  font-weight:900;
 }
+
 .step__title{
-  margin: 0 0 6px;
-  font-size: 14px;
-  letter-spacing: -0.01em;
+  margin:0 0 6px;
+  font-size:14px;
 }
+
 .step__text{
-  margin: 0;
-  color: var(--muted);
-  font-size: 12.5px;
-  line-height: 1.55;
+  margin:0;
+  font-size:12.5px;
+  line-height:1.55;
+  color:var(--muted);
 }
+
+/* CONNECTOR LINES — ONLY SYSTEM USED */
+.step__dot::before,
+.step__dot::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  height:1px;
+  background:var(--line);
+  width:9999px;
+  z-index:-1;
+}
+
+/* left connector */
+.step__dot::before{
+  right:100%;
+  margin-right:18px;
+}
+
+/* right connector */
+.step__dot::after{
+  left:100%;
+  margin-left:18px;
+}
+
+/* edge cases */
+.step:first-child .step__dot::before{display:none}
+.step:last-child .step__dot::after{display:none}
 
 /* Health */
 .health{
@@ -565,11 +610,13 @@ a{ color: inherit; text-decoration: none; }
   overflow:hidden;
   display:flex;
   align-items:center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 18px;
 }
 .cta__content{
   max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
 }
 .cta__title{
   margin: 0 0 10px;
@@ -578,6 +625,9 @@ a{ color: inherit; text-decoration: none; }
 }
 .cta__text{
   margin: 0 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 620px;
   color: rgba(255,255,255,0.88);
   font-size: 13px;
   line-height: 1.6;
