@@ -11,7 +11,7 @@ This project is built as a **static website** using plain HTML, CSS, and JavaScr
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **HTML5** – semantic structure
 - **CSS3** – custom design system & responsive layout
