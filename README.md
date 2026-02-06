@@ -7,7 +7,7 @@ This project is built as a **static website** using plain HTML, CSS, and JavaScr
 ---
 
 ## 🌐 Live Demo
-👉 https://growthsystemsorg.netlify.app  
+https://growthsystemsorg.netlify.app  
 
 ---
 
