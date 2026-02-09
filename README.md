@@ -25,7 +25,7 @@ https://growthsystemsorg.netlify.app
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 /
