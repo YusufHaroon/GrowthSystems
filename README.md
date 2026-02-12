@@ -13,7 +13,7 @@ https://growthsystemsorg.netlify.app
 
 ## Tech Stack
 
-- **HTML5** – semantic structure
+- **HTML5** – Semantic structure
 - **CSS3** – custom design system & responsive layout
 - **JavaScript (Vanilla)** – lightweight interactivity
 - **Hosting & Deployment**
