@@ -15,7 +15,7 @@ https://growthsystemsorg.netlify.app
 
 - **HTML5** – Semantic Structure
 - **CSS3** – Custom Design System & Responsive Layout
-- **JavaScript (Vanilla)** – Lightweight interactivity
+- **JavaScript (Vanilla)** – Lightweight Interactivity
 - **Hosting & Deployment**
   - Netlify (free tier)
   - GitHub (version control)
