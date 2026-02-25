@@ -17,7 +17,7 @@ https://growthsystemsorg.netlify.app
 - **CSS3** – Custom Design System & Responsive Layout
 - **JavaScript (Vanilla)** – Lightweight Interactivity
 - **Hosting & Deployment**
-  - Netlify (Free tier)
+  - Netlify (Free Tier)
   - GitHub (version control)
 
 ---
