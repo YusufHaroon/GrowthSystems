@@ -18,7 +18,7 @@ https://growthsystemsorg.netlify.app
 - **JavaScript (Vanilla)** – Lightweight Interactivity
 - **Hosting & Deployment**
   - Netlify (Free Tier)
-  - GitHub (version control)
+  - GitHub (Version control)
 
 ---
 
