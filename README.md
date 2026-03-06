@@ -27,6 +27,6 @@ https://growthsystemsorg.netlify.app
 ```text
 /
 ├── index.html     # Main HTML File
-├── styles.css     # Global Styles and layout
+├── styles.css     # Global Styles and Layout
 ├── script.js      # JS interactions
 └── README.md      # Project documentation
