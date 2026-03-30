@@ -14,7 +14,7 @@ https://growthsystemsorg.netlify.app
 ## Tech Stack
 
 - **HTML5** – Semantic Structure
-- **CSS3** – Custom Design System & Responsive Layout
+- **CSS3** – Custom Design System and Responsive Layout
 - **JavaScript (Vanilla)** – Lightweight Interactivity
 - **Hosting & Deployment**
   - Netlify (Free Tier)
